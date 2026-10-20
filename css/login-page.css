@@ -1,0 +1,356 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* background-color: black; */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    padding: 4px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    /* gap: 1rem; */
+}
+
+nav .one {
+    list-style-type: none;
+}
+
+.one li a {
+    text-decoration: none;
+}
+
+.logo {
+    color: goldenrod;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.fa-bell {
+    color: goldenrod;
+    font-size: 70px;
+
+}
+
+.dine {
+    color: white;
+}
+
+.one .discover {
+    color: goldenrod;
+}
+
+.two li a {
+    text-decoration: none;
+}
+
+nav .two {
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+    margin-left: auto;
+}
+
+.two .account{
+    color: white;
+    font-size: 18px;
+}
+
+.two .register a {
+    color: goldenrod;
+    font-size: 18px;
+}
+
+/* BODY */
+.body{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    /* text-align: center; */
+}
+
+.body .welcome h1{
+    font-size: 50px;
+    /* margin-top: 0px; */
+}
+
+.welcome .p1{
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.welcome .p2{
+    margin-top: 18px;
+    text-align: center;
+}
+
+.welcome .p2 a{
+    /* text-decoration: none; */
+    font-size: 18px;
+    font-weight: bold;
+    color: goldenrod;
+    text-decoration: none;
+}
+
+/* FORM */
+
+form{
+    /* border: 1px solid red; */
+    width: 450px;
+    margin: 30px auto;
+}
+
+form .email{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+form .email input{
+    border: none;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    background: transparent;
+}
+
+form .email div{
+    border: 1px solid grey;
+    padding: 18px;
+    display: flex;
+    gap: 1rem;
+    border-radius: 5px;
+}
+
+form .password{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form .password input{
+    border: none;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    background: transparent;
+}
+
+form .password div{
+    border: 1px solid grey;
+    padding: 18px;
+    display: flex;
+    gap: 1rem;
+    border-radius: 5px;
+}
+
+.fa-eye{
+    padding-right: auto;
+}
+
+form .remember{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+form .remember div{
+    display: flex;
+    font-size: 16px;
+    gap: 1rem;
+
+}
+
+.remember p a{
+    color: #d4af37;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+form button{
+    padding: 20px;
+    width: 100%;
+    background-color: #d4af37;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 20px;
+    /* font-weight: bold; */
+}
+
+form .continue{
+    text-align: center;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+/* SOCIALS */
+.socials{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    /* margin-bottom: 50px; */
+}
+
+.google{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border: 1px solid rgba(128, 128, 128, 0.505);
+    padding: 15px 50px;
+    border-radius: 5px;
+}
+
+.google img{
+    height: 3vh;
+}
+.facebook{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border: 1px solid rgba(128, 128, 128, 0.505);
+    padding: 15px 50px;
+    border-radius: 5px;
+}
+
+.facebook img{
+    height: 3vh;
+}
+
+.safe{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 16px;
+    margin-top: 60px;
+    font-weight: bold;
+}
+
+.safe .fa-check{
+    /* border: 1px solid #d4af37; */
+    background-color: #d4af37;
+    font-size: 25px;
+    padding: 5px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px){
+    nav {
+        justify-content: space-between;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        align-items: center;
+    }
+
+    .one li a {
+        text-decoration: none;
+    }
+
+    .logo {
+        font-size: 15px;
+    }
+
+    .fa-bell {
+        font-size: 30px;
+    }
+
+    .discover {
+        font-size: 10px;
+    }
+
+    nav .two{
+        gap: 8px;
+        align-items: center;
+    }
+
+    .two .account{
+        font-size: 12px;
+    }
+
+    .two .register a {
+    font-size: 12px;
+}
+/* BODY */
+    .body .welcome h1{
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.welcome .p1{
+    font-size: 15px;
+    /* margin-top: 10px; */
+}
+
+.welcome .p2 a{
+    font-size: 15px;
+}
+
+/* FORM */
+form{
+    /* border: 1px solid red; */
+    width: 85%;
+    /* padding: 25px; */
+    margin: 30px auto;
+}
+
+form .email input{
+    font-size: 13px;
+}
+form .password input{
+    font-size: 13px;
+}
+
+form .remember div{
+    font-size: 13px;
+}
+
+.remember p a{
+    font-size: 13px;
+}
+
+form button{
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+form .continue{
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+/* socials */
+.socials{
+    margin-top: 20px;
+    /* width: 55%; */
+}
+
+.google{
+    /* gap: 1rem; */
+    padding: 15px 30px;
+}
+
+.facebook{
+    /* gap: 1rem; */
+    padding: 15px 30px;
+}
+.safe{
+    font-size: 13px;
+    margin-top: 40px;
+}
+
+.safe .fa-check{
+    font-size: 20px;
+}
+
+
+}
